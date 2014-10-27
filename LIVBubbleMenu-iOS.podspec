@@ -20,9 +20,6 @@ Pod::Spec.new do |s|
 
 end
 
-pod 'LIVBubbleMenu-iOS', :git => 'https://github.com/limitlessvirtual/LIV$
-
-
 
 
 
