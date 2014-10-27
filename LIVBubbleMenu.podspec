@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.1"
   s.source_files  = "LIVBubbleMenu"
   s.source       = { :git => "https://github.com/limitlessvirtual/LIVBubbleMenu-iOS.git", :tag => "v1.0.0" }
-
+  s.dependency 'pop', '~> 1.0.7'
 
 end
 
