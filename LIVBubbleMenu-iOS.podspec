@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "LIVBubbleMenu-iOS"
+  s.name         = "LIVBubbleMenu"
   s.version      = "1.0.0"
   s.summary      = "An animated and customisable bubble menu for iOS8."
 
@@ -19,5 +19,13 @@ Pod::Spec.new do |s|
 
 
 end
+
+pod 'LIVBubbleMenu-iOS', :git => 'https://github.com/limitlessvirtual/LIV$
+
+
+
+
+
+
 
 
