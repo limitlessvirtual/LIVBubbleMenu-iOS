@@ -3,9 +3,9 @@
 
 An animated bubble menu using the pop animation library (https://github.com/facebook/pop). The menu is fully customizable in terms of radius, number of items, animation speed, bounciness, background, alpha ect.
 
-<img src="http://i.imgur.com/qLZf7a8.gif?1" style="width: 200px;">
-<img src="http://i.imgur.com/p0HduNB.gif?1" style="width: 200px;">
-<img src="http://i.imgur.com/LPZpFhp.gif" style="width: 200px;">
+<img src="http://i.imgur.com/qLZf7a8.gif?1" width="200px;">
+<img src="http://i.imgur.com/p0HduNB.gif?1" width="200px;">
+<img src="http://i.imgur.com/LPZpFhp.gif" width="200px;">
 
 ##Setup
 
