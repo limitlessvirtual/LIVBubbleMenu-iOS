@@ -69,6 +69,26 @@ The following delegates are available:
 
 ```
 
+##Customizable Properties
+| Property               | Type     | Description                                                            | Default Value |
+|------------------------|----------|------------------------------------------------------------------------|---------------|
+| menuItemImages         | NSArray* | UIImages for each bubble menu item.                                    | -             |
+| menuRadius             | int      | The overall radius of the bubble menu.                                 | -             |
+| isAnimating            | BOOL     | Flag whether the animation is currently hiding or showing              | -             |
+| parentView             | UIView*  | The parent view that the bubble menu gets added to.                    | -             |
+| bubbleRadius           | float    | Radius of each bubble item                                             | 40.0f         |
+| bubbleAlpha            | float    | Float of each bubble item                                              | 0.97f         |
+| bubbleShowDelayTime    | float    | The delay between each bubble item popping in                          | 0.15f         |
+| bubbleHideDelayTime    | float    | The delay between each bubble item popping out                         | 0.15f         |
+| bubbleSpringBounciness | float    | Spring bounciness of the bubble item popping in                        | 20.0f         |
+| bubbleSpringSpeed      | float    | The spring speed of the bubble when popping in (default is 3.0f)       | 3.0f          |
+| bubblePopInDuration    | float    | The amount of seconds it takes for a bubble to reach its show position | 1.0f          |
+| bubblePopOutDuration   | float    | The amount of seconds it takes for a bubble to reach its hide position | 1.0f          |
+| hasBackground          | BOOL     | Toggles whether the menu has a background that fades in                | YES           |
+| backgroundColor        | UIColor* | The color of the background                                            | Black         |
+| backgroundAlpha        | float    | The alpha of the background (0.2 by default)                           | 0.2f          |
+| backgroundFadeDuration | float    | he amount of seconds it takes for the background to fade in/out        | 1.2f          |
+
 ##Requirements
 
 `ARC`, `iOS 7.1+`, `Xcode 5+`
@@ -79,3 +99,9 @@ The following delegates are available:
 * Different types of animations
 * More properties to custmize
 * Have an idea? Pop an email to info@limitlessvirtual.com
+
+##Credit
+The components is originally based on the awesome component <a href="https://github.com/mixdesign/AAShareBubbles">mixdesign/AAShareBubbles</a> by <a href="https://github.com/mixdesign">Almas Adilbek</a>.
+
+Emoticons in the demo are by <a href="https://dribbble.com/shots/891540-Emoticons?list=users&offset=1">Keyamoon</a>
+
