@@ -3,7 +3,9 @@
 
 An animated bubble menu using the pop animation library (https://github.com/facebook/pop). The menu is fully customizable in terms of radius, number of items, animation speed, bounciness, background, alpha ect.
 
-
+<img src="http://i.imgur.com/qLZf7a8.gif?1">
+<img src="http://i.imgur.com/p0HduNB.gif?1">
+<img src="http://i.imgur.com/LPZpFhp.gif">
 
 ##Setup
 
@@ -30,7 +32,7 @@ Create the LIVBubbleMenu with an array of images and set certain properties:
 
 //Array of UIImages for each bubble
 NSArray* images = [NSArray arrayWithObjects:
-                     	 [UIImage imageNamed:@"angry"],
+                     	[UIImage imageNamed:@"angry"],
                         [UIImage imageNamed:@"confused"],
                         [UIImage imageNamed:@"cool"],
                         [UIImage imageNamed:@"grin"],
