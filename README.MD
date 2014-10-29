@@ -30,7 +30,6 @@ Import the required header file:
 //or without pod
 
 #import "LIVBubbleMenu.h"
-
 ```
 
 Create the LIVBubbleMenu with an array of images and set certain properties:
@@ -64,12 +63,12 @@ bubbleMenu.bubbleSpringBounciness = 30.0f;
 
 There are two ways to create the bubble menu:
 
-At a certain point in a view:
+**At a certain point in a view:**
 
 ```objective-c
 [[LIVBubbleMenu alloc] initWithPoint:CGPointMake(100,100) radius:150 menuItems:array inView:self.view];
 ```
-Centered in the window:
+**Centered in the window:**
 
 ```objective-c
 LIVBubbleMenu *bubbleMenu = [[LIVBubbleMenu alloc] initCenteredInWindowWithRadius:150 menuItems:images];
@@ -94,6 +93,7 @@ The following delegates are available:
 ```
 
 ##Customizable Properties
+
 | Property               | Type     | Description                                                            | Default Value |
 |------------------------|----------|------------------------------------------------------------------------|---------------|
 | menuItemImages         | NSArray* | UIImages for each bubble menu item.                                    | -             |
