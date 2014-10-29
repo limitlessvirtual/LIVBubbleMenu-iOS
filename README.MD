@@ -7,6 +7,8 @@ An animated bubble menu using the pop animation library (https://github.com/face
 <img src="http://i.imgur.com/p0HduNB.gif?1" width="200px;">
 <img src="http://i.imgur.com/LPZpFhp.gif" width="200px;">
 
+**Note**: An <a href="https://github.com/limitlessvirtual/LIVBubbleMenu-Android">Android Version</a> is also available.
+
 ##Setup
 
 You can either:
@@ -23,7 +25,12 @@ pod 'LIVBubbleMenu'
 Import the required header file:
 
 ```objective-c
-#import "<LIVBubbleMenu/LIVBubbleMenu.h">
+#import <LIVBubbleMenu/LIVBubbleMenu.h>
+
+//or without pod
+
+#import "LIVBubbleMenu.h"
+
 ```
 
 Create the LIVBubbleMenu with an array of images and set certain properties:
@@ -53,6 +60,8 @@ bubbleMenu.bubbleSpringBounciness = 30.0f;
 
 ```
 
+###Initialisation
+
 There are two ways to create the bubble menu:
 
 At a certain point in a view:
@@ -65,6 +74,8 @@ Centered in the window:
 ```objective-c
 LIVBubbleMenu *bubbleMenu = [[LIVBubbleMenu alloc] initCenteredInWindowWithRadius:150 menuItems:images];
 ```
+
+###Delegates
 
 The following delegates are available:
 
@@ -113,8 +124,8 @@ The following delegates are available:
 * More properties to custmize
 * Have an idea? Pop an email to info@limitlessvirtual.com
 
-##Credit
-The components is originally based on the awesome component <a href="https://github.com/mixdesign/AAShareBubbles">mixdesign/AAShareBubbles</a> by <a href="https://github.com/mixdesign">Almas Adilbek</a>.
+##Credits
+The components is originally based on the awesome component <a href="https://github.com/mixdesign/AAShareBubbles">AAShareBubbles</a> by <a href="https://github.com/mixdesign">Almas Adilbek</a>.
 
 Emoticons in the demo are by <a href="https://dribbble.com/shots/891540-Emoticons?list=users&offset=1">Keyamoon</a>
 
