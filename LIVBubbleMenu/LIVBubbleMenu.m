@@ -29,8 +29,8 @@
         _menuRadius = radiusValue;
         _bubbleRadius = 40;
         _bubbleAlpha = 0.97f;
-        _showBubbleDelayTime = 0.15f;
-        _hideBubbleDelayTime = 0.15f;
+        _bubbleShowDelayTime = 0.15f;
+        _bubbleHideDelayTime = 0.15f;
         _bubbleSpringSpeed = 3.0f;
         _bubbleSpringBounciness = 20.0f;
         _bubblePopInDuration = 1.0f;
@@ -113,7 +113,7 @@
         for (NSValue *coordinate in coordinates)
         {
             UIButton *bubble = bubbleButtons[i];
-            float delayTime = (float) (i * _showBubbleDelayTime);
+            float delayTime = (float) (i * _bubbleShowDelayTime);
             
             [self showBubbleWithAnimation:[coordinate CGPointValue] button:bubble delay:delayTime];
             ++i;
@@ -131,7 +131,7 @@
         
         for (UIButton *bubbleButton in bubbleButtons)
         {
-            float delayTime = (float) (i * _hideBubbleDelayTime);
+            float delayTime = (float) (i * _bubbleHideDelayTime);
             
             [self hideBubbleWithAnimation:bubbleButton delay:delayTime];
 
@@ -236,6 +236,7 @@
     };
 
     
+    //Add the animations (start them)
     [bubble pop_addAnimation:positionOutAnimation forKey:@"positionOut"];
     [bubble pop_addAnimation:scaleOutAnimation forKey:@"scaleOut"];
     [bubble pop_addAnimation:bubbleFadeOutAnimation forKey:@"fadeOut"];
@@ -250,8 +251,6 @@
         [self.delegate livBubbleMenu:self tappedBubbleWithIndex:button.tag];
     }
 }
-
-
 
 
 #pragma mark Utility
@@ -293,9 +292,10 @@
 {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    return img;
+    
+    return image;
 }
 
 

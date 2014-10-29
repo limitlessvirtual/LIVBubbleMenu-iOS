@@ -27,20 +27,19 @@
 // Bubble
 @property (nonatomic, assign) int bubbleRadius; // Radius of each menu item
 @property (nonatomic, assign) float bubbleAlpha; // Alpha of each bubble (0.97 by default)
-@property (nonatomic, assign) CGFloat showBubbleDelayTime; // The delay between each bubble item popping in
-@property (nonatomic, assign) CGFloat hideBubbleDelayTime; // The delay between each bubble item popping out
-@property (nonatomic, assign) CGFloat bubbleSpringBounciness; // Spring bounciness of the buble when popping in (default is 20.0f)
-@property (nonatomic, assign) CGFloat bubbleSpringSpeed; // The spring speed of the bubble when popping in (default is 3.0f)
-@property (nonatomic, assign) CGFloat bubblePopInDuration; // The amount of seconds it takes for a bubble to reach its show position (default is 1.0f)
-@property (nonatomic, assign) CGFloat bubblePopOutDuration; // The amount of seconds it takes for a bubble to reach its hide position  (default is 1.0f)
-
+@property (nonatomic, assign) float bubbleShowDelayTime; // The delay between each bubble item popping in
+@property (nonatomic, assign) float bubbleHideDelayTime; // The delay between each bubble item popping out
+@property (nonatomic, assign) float bubbleSpringBounciness; // Spring bounciness of the buble when popping in (default is 20.0f)
+@property (nonatomic, assign) float bubbleSpringSpeed; // The spring speed of the bubble when popping in (default is 3.0f)
+@property (nonatomic, assign) float bubblePopInDuration; // The amount of seconds it takes for a bubble to reach its show position (default is 1.0f)
+@property (nonatomic, assign) float bubblePopOutDuration; // The amount of seconds it takes for a bubble to reach its hide position  (default is 1.0f)
 
 
 // Background
 @property (nonatomic) UIView *backgroundView;
 @property (nonatomic, assign) BOOL hasBackground; // Toggles whether the menu has a background that fades in (On by default)
 @property (nonatomic, assign) UIColor *backgroundColor; // The color of the background (Black by default)
-@property (nonatomic, assign) CGFloat backgroundAlpha; // The alpha of the background (0.2 by default)
+@property (nonatomic, assign) float backgroundAlpha; // The alpha of the background (0.2 by default)
 @property int backgroundFadeDuration; // The amount of seconds it takes for the background to fade in/out (1.2 by default
 
 
