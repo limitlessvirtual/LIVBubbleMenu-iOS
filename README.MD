@@ -41,7 +41,7 @@ NSArray* images = [NSArray arrayWithObjects:
                         [UIImage imageNamed:@"sad"],
                         nil]; 
 
-//Create the components
+//Create the component centered in window
 LIVBubbleMenu *bubbleMenu = [[LIVBubbleMenu alloc] initCenteredInWindowWithRadius:150 menuItems:images];
 
 //Set optional properties
@@ -51,6 +51,19 @@ bubbleMenu.bubbleSpringBounciness = 30.0f;
 //Show the menu
 [bubbleMenu show];
 
+```
+
+There are two ways to create the bubble menu:
+
+At a certain point in a view:
+
+```objective-c
+[[LIVBubbleMenu alloc] initWithPoint:CGPointMake(100,100) radius:150 menuItems:array inView:self.view];
+```
+Centered in the window:
+
+```objective-c
+LIVBubbleMenu *bubbleMenu = [[LIVBubbleMenu alloc] initCenteredInWindowWithRadius:150 menuItems:images];
 ```
 
 The following delegates are available:
