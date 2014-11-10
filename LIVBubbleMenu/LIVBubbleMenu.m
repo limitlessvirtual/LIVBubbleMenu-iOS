@@ -121,21 +121,24 @@
     }
 }
 
--(void)hide
+-(void)hideFromIndex:(NSInteger)index
 {
     if(!self.isAnimating)
     {
         self.isAnimating = YES;
-       
-        int i = 0;
         
-        for (UIButton *bubbleButton in bubbleButtons)
+        NSInteger count = bubbleButtons.count;
+        
+        for (int i = 0; i < count; i++)
         {
+            int bubbleToHide = (i+index)%count;
+            
+            UIButton *bubbleButton = bubbleButtons[bubbleToHide];
+            
             float delayTime = (float) (i * _bubbleHideDelayTime);
             
             [self hideBubbleWithAnimation:bubbleButton delay:delayTime];
-
-            ++i;
+            
         }
     }
 }
@@ -246,7 +249,7 @@
 #pragma mark Actions
 
 -(void)buttonWasTapped:(UIButton *)button {
-    [self hide];
+    [self hideFromIndex:[bubbleButtons indexOfObject:button]];
     if([self.delegate respondsToSelector:@selector(livBubbleMenu:tappedBubbleWithIndex:)]) {
         [self.delegate livBubbleMenu:self tappedBubbleWithIndex:button.tag];
     }
@@ -257,7 +260,7 @@
 
 -(void)backgroundTapped:(UITapGestureRecognizer *)tapGesture
 {
-    [self hide];
+    [self hideFromIndex:0];
 }
 
 -(UIButton*)createButtonWithImage:(UIImage *)image

@@ -49,6 +49,7 @@
 
 -(void)show; // Show the menu
 -(void)hide; // Hide the menu
+-(void)hideFromIndex:(NSInteger)index; // Hide the menu
 
 @end
 
