@@ -1,0 +1,9 @@
+*.xccheckout
+
+*.xcuserstate
+
+*.xcscheme
+
+*.plist
+
+*.pbxproj
