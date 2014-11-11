@@ -121,6 +121,18 @@
     }
 }
 
+-(void)hide{
+    for (int i = 0; i < bubbleButtons.count; i++)
+    {
+        UIButton *bubbleButton = bubbleButtons[i];
+        
+        float delayTime = (float) (i * _bubbleHideDelayTime);
+        
+        [self hideBubbleWithAnimation:bubbleButton delay:delayTime];
+        
+    }
+}
+
 -(void)hideFromIndex:(NSInteger)index
 {
     if(!self.isAnimating)
@@ -131,7 +143,7 @@
         
         for (int i = 0; i < count; i++)
         {
-            int bubbleToHide = (i+index)%count;
+            NSInteger bubbleToHide = (i+index) % count;
             
             UIButton *bubbleButton = bubbleButtons[bubbleToHide];
             
@@ -260,7 +272,7 @@
 
 -(void)backgroundTapped:(UITapGestureRecognizer *)tapGesture
 {
-    [self hideFromIndex:0];
+    [self hide];
 }
 
 -(UIButton*)createButtonWithImage:(UIImage *)image

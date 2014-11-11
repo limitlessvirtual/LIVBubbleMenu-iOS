@@ -6,3 +6,9 @@ Demo/LIVBubbleMenu.xcodeproj/xcuserdata/bkirchner.xcuserdatad/xcschemes/xcscheme
 *.xcuserstate
 
 *.xcscheme
+
+Demo/LIVBubbleMenu.xcodeproj/project.pbxproj
+
+*.plist
+
+*.pbxproj
