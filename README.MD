@@ -114,7 +114,7 @@ The following delegates are available:
 | hasBackground          | BOOL     | Toggles whether the menu has a background that fades in                | YES           |
 | backgroundColor        | UIColor* | The color of the background                                            | Black         |
 | backgroundAlpha        | float    | The alpha of the background (0.2 by default)                           | 0.2f          |
-| backgroundFadeDuration | float    | the amount of seconds it takes for the background to fade in/out       | 1.2f          |
+| backgroundFadeDuration | float    | The amount of seconds it takes for the background to fade in/out       | 1.2f          |
 
 ##Requirements
 
