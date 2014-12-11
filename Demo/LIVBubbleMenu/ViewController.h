@@ -14,7 +14,10 @@
 @property LIVBubbleMenu* bubbleMenu;
 @property NSArray* images;
 @property (strong, nonatomic) IBOutlet UIButton *moodButton;
+@property (weak, nonatomic) IBOutlet UIButton *partialButton;
 - (IBAction)moodButtonTapped;
+- (IBAction)partialButtonTapped:(id)sender;
+
 
 @end
 

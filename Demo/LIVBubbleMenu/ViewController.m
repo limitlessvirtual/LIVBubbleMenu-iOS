@@ -40,8 +40,21 @@
 }
 
 - (IBAction)moodButtonTapped {
-    _bubbleMenu = [[LIVBubbleMenu alloc] initCenteredInWindowWithRadius:150 menuItems:_images];
+    _bubbleMenu = [[LIVBubbleMenu alloc] initWithPoint:self.moodButton.center radius:150 menuItems:_images inView:self.view];
     _bubbleMenu.delegate = self;
+    _bubbleMenu.easyButtons = NO;
+    [_bubbleMenu show];
+}
+
+- (IBAction)partialButtonTapped:(id)sender {
+    NSRange range;
+    range.location = 0;
+    range.length = 4;
+    _bubbleMenu = [[LIVBubbleMenu alloc] initWithPoint:self.partialButton.center radius:150 menuItems:[_images subarrayWithRange:range] inView:self.view];
+    _bubbleMenu.delegate = self;
+    _bubbleMenu.easyButtons = NO;
+    _bubbleMenu.bubbleStartAngle = 0.0f;
+    _bubbleMenu.bubbleTotalAngle = 180.0f;
     [_bubbleMenu show];
 }
 

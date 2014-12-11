@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--LIVBubbleMenu-->
@@ -17,17 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7R-cZ-xWy">
-                                <rect key="frame" x="245" y="285" width="109" height="30"/>
-                                <state key="normal" title="Pick Your Mood">
+                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <state key="normal" title="Circlular Menu">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="moodButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOc-qO-hrR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUy-tb-32T">
+                                <rect key="frame" x="250" y="90" width="100" height="30"/>
+                                <state key="normal" title="Partial Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partialButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5p-Ag-9uB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="A7R-cZ-xWy" firstAttribute="centerX" secondItem="WUy-tb-32T" secondAttribute="centerX" id="ASX-Tj-hxX"/>
                             <constraint firstAttribute="centerX" secondItem="A7R-cZ-xWy" secondAttribute="centerX" id="B3H-ka-EcX"/>
                             <constraint firstAttribute="centerY" secondItem="A7R-cZ-xWy" secondAttribute="centerY" id="fVQ-lj-ePp"/>
                         </constraints>
@@ -36,11 +47,12 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="moodButton" destination="A7R-cZ-xWy" id="BUa-W1-E4A"/>
+                        <outlet property="partialButton" destination="WUy-tb-32T" id="496-5W-2hA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275" y="236.99999999999997"/>
+            <point key="canvasLocation" x="275" y="236"/>
         </scene>
     </scenes>
 </document>
