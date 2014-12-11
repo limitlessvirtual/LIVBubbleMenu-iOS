@@ -207,11 +207,10 @@
 				TargetAttributes = {
 					35B3393919F7E490004167B1 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 8DZG85JJAZ;
+						DevelopmentTeam = K9RMCR8682;
 					};
 					35B3395219F7E490004167B1 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 8DZG85JJAZ;
 						TestTargetID = 35B3393919F7E490004167B1;
 					};
 				};
@@ -421,13 +420,13 @@
 			baseConfigurationReference = D597499112532748CDA0FEC5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Condon (KK7926GMRW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Condon (KK7926GMRW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LIVBubbleMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6b85c12a-e71e-4172-9715-5361b915eac4";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -436,13 +435,13 @@
 			baseConfigurationReference = 878AD23651CA0D578E2A7202 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Condon (KK7926GMRW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Condon (KK7926GMRW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LIVBubbleMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6b85c12a-e71e-4172-9715-5361b915eac4";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
