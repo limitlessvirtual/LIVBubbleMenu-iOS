@@ -45,7 +45,7 @@ NSArray* images = [NSArray arrayWithObjects:
                         [UIImage imageNamed:@"happy"],
                         [UIImage imageNamed:@"neutral"],
                         [UIImage imageNamed:@"sad"],
-                        nil]; 
+                        nil];
 
 //Create the component centered in window
 LIVBubbleMenu *bubbleMenu = [[LIVBubbleMenu alloc] initCenteredInWindowWithRadius:150 menuItems:images];
@@ -87,7 +87,7 @@ The following delegates are available:
 
 //The bubble menu has been hidden
 -(void)livBubbleMenuDidHide:(LIVBubbleMenu *)bubbleMenu {
-    NSLog(@"LIVBubbleMenu has been hidden");    
+    NSLog(@"LIVBubbleMenu has been hidden");
 }
 
 ```
@@ -108,10 +108,13 @@ The following delegates are available:
 | bubbleSpringSpeed      | float    | The spring speed of the bubble when popping in (default is 3.0f)       | 3.0f          |
 | bubblePopInDuration    | float    | The amount of seconds it takes for a bubble to reach its show position | 1.0f          |
 | bubblePopOutDuration   | float    | The amount of seconds it takes for a bubble to reach its hide position | 1.0f          |
+| bubbleStartAngle       | float    | Initial angle to start bubbles                                         | 0.0f          |
+| bubbleTotalAngle       | float    | Total available degrees in the bubble menu                             | 360.0f        |
+| easyButtons            | BOOL     | Simple vx complex button styling (set NO if buttons have alpha channel)| YES           |
 | hasBackground          | BOOL     | Toggles whether the menu has a background that fades in                | YES           |
 | backgroundColor        | UIColor* | The color of the background                                            | Black         |
 | backgroundAlpha        | float    | The alpha of the background (0.2 by default)                           | 0.2f          |
-| backgroundFadeDuration | float    | he amount of seconds it takes for the background to fade in/out        | 1.2f          |
+| backgroundFadeDuration | float    | the amount of seconds it takes for the background to fade in/out       | 1.2f          |
 
 ##Requirements
 
