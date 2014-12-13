@@ -122,7 +122,7 @@ The following delegates are available:
 
 ##Upcoming Features
 
-* Bubble hide animation starting at tapped bubble index
+* ~~Bubble hide animation starting at tapped bubble index~~ Done (v1.1.0)
 * Different types of animations
 * More properties to custmize
 * Have an idea? Pop an email to info@limitlessvirtual.com
@@ -131,4 +131,10 @@ The following delegates are available:
 The component is originally based on the awesome <a href="https://github.com/mixdesign/AAShareBubbles">AAShareBubbles</a> by <a href="https://github.com/mixdesign">Almas Adilbek</a>.
 
 Emoticons in the demo are by <a href="https://dribbble.com/shots/891540-Emoticons?list=users&offset=1">Keyamoon</a>
+
+Thanks to the following developers who have contributed:
+
+* Brendan Kirchner (waterskier2007)
+* Matt Condon (Shrugs)
+
 
