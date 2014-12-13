@@ -156,6 +156,28 @@
     }
 }
 
+-(void)hideFromIndex:(NSInteger)index
+{
+    if(!self.isAnimating)
+    {
+        self.isAnimating = YES;
+        
+        NSInteger count = bubbleButtons.count;
+        
+        for (int i = 0; i < count; i++)
+        {
+            NSInteger bubbleToHide = (i+index) % count;
+            
+            UIButton *bubbleButton = bubbleButtons[bubbleToHide];
+            
+            float delayTime = (float) (i * _bubbleHideDelayTime);
+            
+            [self hideBubbleWithAnimation:bubbleButton delay:delayTime];
+            
+        }
+    }
+}
+
 -(void)showBubbleWithAnimation:(CGPoint)coordinate button:(UIButton*)bubble delay:(float)delay
 {
 
@@ -262,7 +284,9 @@
 #pragma mark Actions
 
 -(void)buttonWasTapped:(UIButton *)button {
-    [self hide];
+    
+    [self hideFromIndex:[bubbleButtons indexOfObject:button]];
+    
     if([self.delegate respondsToSelector:@selector(livBubbleMenu:tappedBubbleWithIndex:)]) {
         [self.delegate livBubbleMenu:self tappedBubbleWithIndex:button.tag];
     }
