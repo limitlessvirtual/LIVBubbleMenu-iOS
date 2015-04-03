@@ -55,6 +55,7 @@
     _bubbleMenu.easyButtons = NO;
     _bubbleMenu.bubbleStartAngle = 0.0f;
     _bubbleMenu.bubbleTotalAngle = 180.0f;
+    _bubbleMenu.bubbleTintColor = [UIColor greenColor];
     [_bubbleMenu show];
 }
 

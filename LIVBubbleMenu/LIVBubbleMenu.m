@@ -314,6 +314,10 @@
     button.frame = CGRectMake(0, 0, 2 * _bubbleRadius, 2 * _bubbleRadius);
 
     if (_easyButtons) {
+        if (_bubbleTintColor) {
+            image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            [button setTintColor:_bubbleTintColor];
+        }
         [button setImage:image forState:UIControlStateNormal];
     } else {
         // Circle background
@@ -326,6 +330,10 @@
 
         // Circle icon
         UIImageView *icon = [[UIImageView alloc] initWithImage:image];
+        if (_bubbleTintColor) {
+            [icon setTintColor:_bubbleTintColor];
+            icon.image = [icon.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        }
         CGRect f = icon.frame;
         f.origin.x = (CGFloat) ((circle.frame.size.width - f.size.width) * 0.5);
         f.origin.y = (CGFloat) ((circle.frame.size.height - f.size.height) * 0.5);
