@@ -14,7 +14,7 @@ An animated bubble menu using the pop animation library (https://github.com/face
 You can either:
 
 1. Copy the the **LIVBubbleMenu** directly into your Project
-2. Include the following cocoa pod (preferred):
+2. Include the following cocoapod (preferred):
 
 ```
 pod 'LIVBubbleMenu'
@@ -124,7 +124,7 @@ The following delegates are available:
 
 * ~~Bubble hide animation starting at tapped bubble index~~ Done (v1.1.0)
 * Different types of animations
-* More properties to custmize
+* More properties to customize
 * Have an idea? Pop an email to info@limitlessvirtual.com
 
 ##Credits
