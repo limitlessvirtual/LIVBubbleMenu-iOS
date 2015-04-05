@@ -35,6 +35,7 @@
 @property (nonatomic, assign) float bubblePopOutDuration; // The amount of seconds it takes for a bubble to reach its hide position  (default is 1.0f)
 @property (nonatomic, assign) float bubbleStartAngle; // Initial angle to start bubbles (default is 0.0f)
 @property (nonatomic, assign) float bubbleTotalAngle; // Total available degrees in the bubble menu (default is 360)
+@property (nonatomic, assign) UIColor *bubbleTintColor; // Tint color for bubble images
 @property (nonatomic, assign) BOOL easyButtons; // simple or complex button styling (set NO if buttons have alpha channel) (default is YES);
 
 // Background
