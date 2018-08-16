@@ -13,7 +13,7 @@ An animated bubble menu using the pop animation library (https://github.com/face
 
 You can either:
 
-1. Copy the the **LIVBubbleMenu** directly into your Project
+1. Copy the **LIVBubbleMenu** directly into your Project
 2. Include the following cocoapod (preferred):
 
 ```
